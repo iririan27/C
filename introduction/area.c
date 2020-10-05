@@ -7,5 +7,6 @@ int main(){
 	radio = 5;
 	area = PI * pow(5,2);
 	printf("Area\n");
-	printf("%s%f\n\n", "Area de Circulo con radio 5:", area);
+	printf("Area de Circulo con radio 5: %f", area);
+	return 0;
 }
