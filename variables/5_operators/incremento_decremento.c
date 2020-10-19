@@ -3,7 +3,7 @@
 float a,b;
 int main()
 { // Inicio
- system("clear"); // Limpia pantallpa
+ system("cls"); // Limpia pantalla
 	printf("Dame el primer número\n");
 	scanf("%f",&a);
  printf("Valor inicial de a = %f\n",a);
