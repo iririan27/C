@@ -1,6 +1,6 @@
 #include <studio.h>
 
 int main (){
-	int días 
-	float 
+	int dÃ­as; 
+	float resultado;  
 }
