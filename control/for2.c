@@ -9,7 +9,11 @@ int main(void)
  
   for (x=0;x<=5;x++){
   	for (y=0;y<=5;y++){
-     		 printf("[%d,%d]",x,y);
+  		if (x<=y) {
+	printf("[0,0]",x,y);
+    } else {
+    	 printf("[%d,%d]",x,y);
+	}	
   	}
      	printf("\n");
   }

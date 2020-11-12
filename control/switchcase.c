@@ -40,7 +40,7 @@ int main()
 		break;
 	case 4:
 		c=a/b;
-	printf("\tEl resultdo de la resta es:%f\n",c);
+	printf("\tEl resultdo de la división es:%f\n",c);
 		break;
 	case 5:
 		c = pow(b, a);
