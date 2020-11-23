@@ -17,19 +17,37 @@ float  multiplicacion (int a,int b)
    return a*b;
 }
 
+float division (float a , float b)
+{
+	return  a/b;
+	
+}
+
+float potencia (float a , float b)
+{
+	return  pow(b, a);
+	
+}
+
+float raiz (int a , int b)
+{
+	return  sqrt(b);
+	return  sqrt(a);
+	
+}
 
 long factorial(int n)
 {
-	if (n == 0) /* caso base */
-		return 1; /* como 0! = 1, regresa 1*/
+	if (n == 0) 
+		return 1; 
 	else
-		return n * factorial (n - 1); /* llamada a esta misma funciÃ³n */
+		return n* factorial (n - 1); 
 }
 
 int main(void )
 {
 	int opcion;
-	float a, b, c,d; 
+	float a, b, c,d,n; 
 	
 	printf ("\tAlumna: Falcón Mercado Cristina Iririan\n");
 	printf ("\tIngrese los valores a utilizar:\n");
@@ -53,37 +71,47 @@ int main(void )
 	switch(opcion)
 	{
 	case 1: 
-	int suma = sumar (a,b);
-	printf("\tEl resultado de la suma es: %f\n",suma);
+	//	suma(a,b);
+	//int suma = sumar (a,b);
+	//printf("\tEl resultado de la suma es: %f\n",suma);
+	printf("%f",sumar(a,b));
 		break;
 	case 2: 
-	printf("\tEl resultado de la resta es:%f\n",resta);
+	//printf("\tEl resultado de la resta es:%f\n",resta);
+	printf("%f",resta(a,b));
 		break;
 	case 3:
-	printf("\tEl resultado de la multiplicación es:%f\n",multiplicacion);
+	//printf("\tEl resultado de la multiplicación es:%f\n",multiplicacion);
+	printf("%f",multiplicacion(a,b));
 		break;
 	case 4:
-		c=a/b;
-	printf("\tEl resultdo de la división es:%f\n",c);
+	//	c=a/b;
+	//printf("\tEl resultdo de la división es:%f\n",c);
+	printf("%f", division (a,b));
 		break;
 	case 5:
-		c = pow(b, a);
-	printf("\tEl resultdo de la potencia es:%f\n",c);
+	//	c = pow(b, a);
+	//printf("\tEl resultdo de la potencia es:%f\n",c);
+	printf("%f", potencia (a,b));
 		break;
 	case 6:
-		c=sqrt(b);
-		d=sqrt(a);
-	printf("\nEl resultado del valor 1 es: %f\n", d);
-	printf("\nEl resultado del valor 2 es: %f\n", c);
+	//	c=sqrt(b);
+	//	d=sqrt(a);
+	//printf("\nEl resultado del valor 1 es: %f\n", d);
+	//printf("\nEl resultado del valor 2 es: %f\n", c);
+	printf("%f", raiz (b,a));
+	printf("\n%f", raiz (a,b));
 		break;
 	case 7: 
-	printf("%ld\n ", factorial(-10));
-	return 0;
+	printf("%ld\n ", factorial(a));
+	printf("%ld\n", factorial (b));
+		return 0;
 	break; 
 	
 	default:
 		exit(0);
 	} 
-	printf("\tTermino del ejercicio con switch\n");
+	printf("\n\tTermino del ejercicio con switch\n");
+
 	} while (opcion!=8);
 } 
